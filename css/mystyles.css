@@ -1,12 +1,13 @@
-html,
-body {
-  min-width: 290px;
-  color: #4d4e53;
-  background-color: #ffffff;
-  font-family: 'Open Sans', Arial, sans-serif;
-  line-height: 1.5;
+/*Styling Html and the Body*/
+html, body {
+min-width: 290px;
+color: #4d4e53;
+background-color: #ffffff;
+font-family: 'Open Sans', Arial, sans-serif;
+line-height: 1.5;
 }
 
+/*Styling the navbar*/
 #navbar {
   position: fixed;
   min-width: 290px;
@@ -15,9 +16,10 @@ body {
   width: 300px;
   height: 100%;
   border-right: solid;
-  border-color: rgba(0, 22, 22, 0.4);
-}
+  border-color: rgba(0. 22, 22, 0.4;)
 
+}
+/* Styling the header */
 header {
   color: black;
   margin: 10px;
@@ -26,11 +28,13 @@ header {
   font-weight: thin;
 }
 
+/*Styling the headers in the main doc id*/
 #main-doc header {
   text-align: left;
   margin: 0px;
 }
 
+/*for list in the navbar*/
 #navbar ul {
   height: 88%;
   padding: 0;
@@ -38,15 +42,8 @@ header {
   overflow-x: hidden;
 }
 
+/*targeting the navbar list elements*/
 #navbar li {
-  color: #4d4e53;
-  border-top: 1px solid;
-  list-style: none;
-  position: relative;
-  width: 100%;
-}
-
-#navbar a {
   display: block;
   padding: 10px 30px;
   color: #4d4e53;
@@ -54,6 +51,7 @@ header {
   cursor: pointer;
 }
 
+/*Styling the main doc id*/
 #main-doc {
   position: absolute;
   margin-left: 310px;
@@ -61,16 +59,19 @@ header {
   margin-bottom: 110px;
 }
 
+/*Targeting the Section Article*/
 section article {
   color: #4d4e53;
   margin: 15px;
   font-size: 0.96em;
 }
 
+/*Section list elements*/
 section li {
   margin: 15px 0px 0px 20px;
 }
 
+/*Styling the Codes element*/
 code {
   display: block;
   text-align: left;
@@ -86,29 +87,30 @@ code {
 }
 
 @media only screen and (max-width: 815px) {
-  /* For mobile phones: */
+  /*for mobile phone users*/
   #navbar ul {
     border: 1px solid;
     height: 207px;
   }
+/*for navbar on mobile phone*/
+#navbar {
+background-color: white;
+position: absolute;
+top: 0;
+padding: 0;
+margin: 0;
+width: 100%;
+max-height: 275px;
+border: none;
+z-index: 1;
+border-bottom: 2px solid;
+}
 
-  #navbar {
-    background-color: white;
-    position: absolute;
-    top: 0;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    max-height: 275px;
-    border: none;
-    z-index: 1;
-    border-bottom: 2px solid;
-  }
-
-  #main-doc {
-    position: relative;
-    margin-left: 0px;
-    margin-top: 270px;
+/*main doc styling for mobile phone*/
+#main-doc {
+  position: relative;
+  margin-left: 0px;
+  margin-top: 270px;
   }
 }
 
@@ -116,7 +118,6 @@ code {
   #main-doc {
     margin-left: -10px;
   }
-
   code {
     margin-left: -20px;
     width: 100%;
